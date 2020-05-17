@@ -19,5 +19,5 @@ class Categoria extends Model
     ];
 
     //trabalhar com dados salvos
-    protected $guarded[];
+    protected $guarded = [];
 }

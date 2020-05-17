@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Requests\Request;
 
 class CategoriaFormRequest extends FormRequest
 {
@@ -13,7 +14,6 @@ class CategoriaFormRequest extends FormRequest
      */
     public function authorize()
     {
-        //return false;
         return true;
     }
 
@@ -26,8 +26,7 @@ class CategoriaFormRequest extends FormRequest
     {
         return [
             'nome' => 'required|max:200',
-            'descricao' => 'max:250'
-            //'nome' => 'required'|'max:50'
+            'descricao' => 'max:250',
         ];
     }
 }

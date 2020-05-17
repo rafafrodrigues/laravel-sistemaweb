@@ -27,9 +27,9 @@
         <!-- Logo -->
         <a href="index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>HV</b>V</span>
+          <span class="logo-mini"><b>RF</b>V</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>HV - Vendas</b></span>
+          <span class="logo-lg"><b>RF - Vendas</b></span>
         </a>
 
         <!-- Header Navbar: style can be found in header.less -->
@@ -47,7 +47,7 @@
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <small class="bg-red">Online</small>
-                  <span class="hidden-xs">Hugo Vasconcelos de Freitas</span>
+                  <span class="hidden-xs">Rafael Fernandes</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->

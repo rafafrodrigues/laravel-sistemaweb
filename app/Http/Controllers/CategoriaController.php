@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use SistemaWeb\Categoria;
+use App\Categoria;
 use Illuminate\Support\Facades\Redirect;
-use SistemaWeb\Http\Requests\CategoriaFormRequest;
+use App\Http\Requests\CategoriaFormRequest;
 use DB;
 
 class CategoriaController extends Controller
