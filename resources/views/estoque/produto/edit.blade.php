@@ -64,9 +64,9 @@
         <div class="col-lg-6 col-sm-6 col-xs-12">
         	<div class="form-group">
 		       	<label for="imagem">Imagem</label>
-		       	<input type="file" name="imagem" class="form-control" required="" >
+		       	<input type="file" name="imagem" class="form-control" >
 		       	@if(($produto->imagem) != "")
-
+                   <img src="{{asset('imagens/produtos/'.$produto->imagem)}}" width="150px">
 		       	@endif
 		    </div>
         </div>

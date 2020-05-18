@@ -26,6 +26,7 @@ class ProdutoController extends Controller
                 ->join('categoria as c', 'p.idcategoria', '=', 'c.idcategoria')
                 ->select('p.idproduto', 'p.nome', 'p.codigo', 'p.estoque', 'c.nome as categoria', 'p.descricao', 'p.imagem', 'p.estado')
                 ->where('p.nome', 'LIKE', '%'.$query.'%')
+                ->where('estado', '=', 'Ativo')
                 ->orderBy('idproduto', 'desc')
                 ->paginate(7);
 
@@ -81,6 +82,8 @@ class ProdutoController extends Controller
     	$produto->idcategoria = $request->get('idcategoria');
         $produto->codigo = $request->get('codigo');
         $produto->nome = $request->get('nome');
+        $produto->estoque = $request->get('estoque');
+        $produto->descricao = $request->get('descricao');
         
         if ($request->hasFile('imagem')) {
             $file = $request->file('imagem');

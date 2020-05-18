@@ -29,7 +29,7 @@ class ProdutoFormRequest extends FormRequest
             'nome' => 'required|max:50',
             'estoque' => 'required|numeric',
             'descricao' => 'required|max:512',
-            'imagem' => 'mimes:jpg,bmp,png',
+            'imagem' => 'mimes:jpeg,bmp,png',
         ];
     }
 }
