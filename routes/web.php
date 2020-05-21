@@ -23,3 +23,5 @@ Route::resource('estoque/categoria', 'CategoriaController');
 Route::resource('estoque/produto', 'ProdutoController');
 
 Route::resource('venda/cliente', 'ClienteController');
+
+Route::resource('venda/venda', 'VendaController');
